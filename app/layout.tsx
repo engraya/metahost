@@ -1,4 +1,10 @@
+'use client';
+
+import {PrivyProvider} from '@privy-io/react-auth';
+
 import { ColorModeScript, theme } from '@chakra-ui/react'
+
+
 
 import { Provider } from './provider'
 
@@ -29,7 +35,24 @@ export default function Layout(props: { children: React.ReactNode }) {
       </head>
       <body className={`chakra-ui-${colorMode}`}>
         <ColorModeScript initialColorMode={colorMode} />
-        <Provider>{props.children}</Provider>
+        <PrivyProvider
+          appId="cm35ndcr902c1jysztp6rtzm0"
+          config={{
+            // Customize Privy's appearance in your app
+            appearance: {
+              theme: 'light',
+              accentColor: '#676FFF',
+              logo: 'https://your-logo-url',
+            },
+            // Create embedded wallets for users who don't have a wallet
+            embeddedWallets: {
+              createOnLogin: 'users-without-wallets',
+            },
+          }}
+        >
+        <Provider>{props.children}</Provider>                                              
+        </PrivyProvider>
+   
       </body>
     </html>
   )
