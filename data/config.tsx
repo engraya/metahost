@@ -8,13 +8,37 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Metahost',
+    description: 'Leverage Metahost’s AI-driven platform to deploy, manage, and scale your decentralized applications with unmatched speed and efficiency.',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
   header: {
     links: [
+      {
+        id: 'dashboard',
+        label: 'Dashboard',
+      },
+      {
+        id: 'docs',
+        label: 'Docs',
+      },
+      {
+        id: 'search',
+        label: 'Search',
+      },
+      {
+        id: 'profile',
+        label: 'Profile',
+      },
+      {
+        id: 'settings',
+        label: 'Settings',
+      },
+      {
+        id: 'help',
+        label: 'Help & Support',
+      },
       {
         id: 'features',
         label: 'Features',
@@ -42,20 +66,20 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="https://twitter.com/Pagebakers">engrahmad</Link>
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: '#',
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
+        href: '#',
         label: <FaTwitter size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: '#',
         label: <FaGithub size="14" />,
       },
     ],

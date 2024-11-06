@@ -8,9 +8,7 @@ export default {
         'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
       children: (
         <>
-          “With SaaS UI I am able to produce high quality dashboard apps and
-          internal tools without a lot of design skills. The ROI really is
-          amazing.”
+          “Metahost revolutionized the way we deploy our blockchain apps. The AI-driven optimizations have drastically improved our app's performance.”
         </>
       ),
     },
@@ -20,9 +18,7 @@ export default {
       avatar: '/static/images/avatar2.jpg',
       children: (
         <>
-          “Saas UI allows me to build beautiful and functional UI super fast.
-          The components are very well thought out and the Next.js starter kit
-          saved me at least 100 hours of work.”
+          “Hosting decentralized applications has never been easier. Metahost’s intuitive platform and powerful AI tools make scaling a breeze”
         </>
       ),
     },
@@ -32,9 +28,7 @@ export default {
       avatar: '/static/images/avatar3.jpg',
       children: (
         <>
-          “Saas UI gave us a perfect starting point for our project, having the
-          storybooks already set up with beautifully crafted components and
-          fully mocked pages was a treat.”
+          “The real-time analytics and AI optimizations provided by Metahost have saved us time and resources. It’s a game-changer for our development team.”
         </>
       ),
     },

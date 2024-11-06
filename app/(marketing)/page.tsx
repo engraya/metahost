@@ -60,8 +60,8 @@ import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
 export const meta: Metadata = {
-  title: 'Saas UI Landingspage',
-  description: 'Free SaaS landingspage starter kit',
+  title: 'Metahost',
+  description: 'Seamless, secure, and scalable hosting for blockchain and decentralized applications',
 }
 
 const Home: NextPage = () => {
@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
-      <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
+      <Container maxW="container.xl" pt={{ base: 40, lg: 20 }} pb="20">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
             id="home"
@@ -94,23 +94,19 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Empowering Decentralized Apps
+                <Br /> with AI-Powered Hosting
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
+                Metahost is a <Em>seamless, secure, and scalable platform</Em>
+                <Br /> for hosting blockchain and decentralized applications<Br />{' '}
+                . Harness the power of AI to optimize your DApp performance. 
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
-
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="/signup">
                   Sign Up
@@ -170,33 +166,33 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: 'Accessible',
+            title: 'AI-Optimized Infrastructure',
             icon: FiSmile,
-            description: 'All components strictly follow WAI-ARIA standards.',
+            description: 'Harness AI to automatically optimize your DApp’s performance, ensuring low latency and high efficiency.',
             iconPosition: 'left',
             delay: 0.6,
           },
           {
-            title: 'Themable',
+            title: 'Decentralized & Secure',
             icon: FiSliders,
             description:
-              'Fully customize all components to your brand with theme support and style props.',
+              'Built with blockchain security principles in mind, Metahost ensures that your apps are hosted on a secure, decentralized infrastructure.',
             iconPosition: 'left',
             delay: 0.8,
           },
           {
-            title: 'Composable',
+            title: 'Seamless Scaling',
             icon: FiGrid,
             description:
-              'Compose components to fit your needs and mix them together to create new ones.',
+              'Easily scale your decentralized apps to handle growing traffic without worrying about downtime or performance dips.',
             iconPosition: 'left',
             delay: 1,
           },
           {
-            title: 'Productive',
+            title: 'Cross-Chain Compatibility',
             icon: FiThumbsUp,
             description:
-              'Designed to reduce boilerplate and fully typed, build your product at speed.',
+              'Deploy your DApps across multiple blockchains and ensure compatibility with leading blockchain networks',
             iconPosition: 'left',
             delay: 1.1,
           },
@@ -212,103 +208,64 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Launch Your DApp in Minutes">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+          Sign up today and experience the power of AI-optimized hosting for your decentralized applications.
           </Text>
-
-          <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: 'gray.900' }}
-          >
-            <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{' '}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
-          </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Ready to Supercharge Your Blockchain App?">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+        Get your project up and running with our seamless, AI-powered platform. Hosting made easy.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
-        avatar="/static/images/avatar.jpg"
-        gradient={['pink.200', 'purple.500']}
+  name="David Zhang"
+  description="Blockchain App Developer"
+  avatar="/static/images/david-avatar.jpg"
+  gradient={['teal.200', 'blue.500']}
+>
+  “Metahost revolutionized our DApp hosting process. With its AI-powered optimizations, we saw a significant boost in performance, and it saved us countless hours of manual infrastructure management. Now, we focus entirely on improving our blockchain app, knowing that Metahost has the backend covered.”
+</HighlightsTestimonialItem>
+
+<HighlightsItem colSpan={[1, null, 2]} title="Host your next blockchain app with AI-powered efficiency">
+  <Text color="muted" fontSize="lg">
+    Metahost takes care of your decentralized app's hosting needs, allowing you to focus on building innovative blockchain solutions. Enjoy enhanced performance and seamless scalability with AI-driven infrastructure.
+  </Text>
+  <Wrap mt="8">
+    {[
+      'AI optimization',
+      'security monitoring',
+      'cross-chain compatibility',
+      'real-time analytics',
+      'smart scaling',
+      'server-side rendering',
+      'global deployment',
+      'decentralized infrastructure',
+      'REST & GraphQL APIs',
+      '24/7 support',
+      'multi-tenancy',
+      'flexible pricing',
+      'cloud hosting',
+      'blockchain integration',
+      'data privacy',
+      'automatic updates',
+      'DApp performance tracking',
+    ].map((value) => (
+      <Tag
+        key={value}
+        variant="subtle"
+        colorScheme="blue"
+        rounded="full"
+        px="3"
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
-      </HighlightsTestimonialItem>
-      <HighlightsItem
-        colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
-      >
-        <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
-        </Text>
-        <Wrap mt="8">
-          {[
-            'authentication',
-            'navigation',
-            'crud',
-            'settings',
-            'multi-tenancy',
-            'layouts',
-            'billing',
-            'a11y testing',
-            'server-side rendering',
-            'documentation',
-            'onboarding',
-            'storybooks',
-            'theming',
-            'upselling',
-            'unit testing',
-            'feature flags',
-            'responsiveness',
-          ].map((value) => (
-            <Tag
-              key={value}
-              variant="subtle"
-              colorScheme="purple"
-              rounded="full"
-              px="3"
-            >
-              {value}
-            </Tag>
-          ))}
-        </Wrap>
-      </HighlightsItem>
+        {value}
+      </Tag>
+    ))}
+  </Wrap>
+</HighlightsItem>
+
     </Highlights>
   )
 }
@@ -324,16 +281,12 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Features
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+
         </>
       }
       align="left"
@@ -341,69 +294,67 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: '#components.',
+          title: 'AI-Powered Hosting',
           icon: FiBox,
           description:
-            'All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.',
+            'Leverage AI to optimize performance, security, and resource management automatically.',
           variant: 'inline',
         },
         {
-          title: 'Starterkits.',
+          title: 'Blockchain-Ready Infrastructure.',
           icon: FiLock,
           description:
-            'Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.',
+            'Purpose-built for decentralized applications, ensuring high uptime and security for blockchain apps',
           variant: 'inline',
         },
         {
-          title: 'Documentation.',
+          title: 'One-Click Deployment.',
           icon: FiSearch,
           description:
-            'Extensively documented, including storybooks, best practices, use-cases and examples.',
+            'Easily deploy and manage your DApps with our intuitive, one-click deployment feature.',
           variant: 'inline',
         },
         {
-          title: 'Onboarding.',
+          title: 'Integrated Analytics & Monitoring.',
           icon: FiUserPlus,
           description:
-            'Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.',
+            'Gain actionable insights into your DApp’s performance, user activity, and security with built-in analytics.',
           variant: 'inline',
         },
         {
-          title: 'Feature flags.',
+          title: 'Global Network for Low Latency',
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            "With a global network of servers, Metahost ensures low latency and fast load times for your users worldwide.",
           variant: 'inline',
         },
         {
-          title: 'Upselling.',
+          title: 'Customizable Pricing Plans.',
           icon: FiTrendingUp,
           description:
-            '#components and hooks for upgrade flows designed to make upgrading inside your app frictionless.',
+            'Flexible pricing tailored to meet the needs of small-scale developers and enterprise-grade applications alike',
           variant: 'inline',
         },
         {
-          title: 'Themes.',
+          title: 'Real-Time Analytics.',
           icon: FiToggleLeft,
           description:
-            'Includes multiple themes with darkmode support, always have the perfect starting point for your next project.',
+            'Track your app’s performance with detailed, real-time insights into usage, security, and scalability metrics.',
           variant: 'inline',
         },
         {
-          title: 'Generators.',
+          title: '24/7 Support & Community.',
           icon: FiTerminal,
           description:
-            'Extend your design system while maintaininig code quality and consistency with built-in generators.',
+            'Benefit from round-the-clock support and an active community to help you every step of the way.',
           variant: 'inline',
         },
         {
-          title: 'Monorepo.',
+          title: 'Open source.',
           icon: FiCode,
           description: (
             <>
-              All code is available as packages in a high-performance{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
+            Benefit from contributing to open source software.
             </>
           ),
           variant: 'inline',
@@ -448,7 +399,6 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
       </Text>
     </Pricing>
   )
